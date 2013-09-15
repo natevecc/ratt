@@ -1,0 +1,12 @@
+<h3>Edit Thing</h3>
+<div class="input-append">
+	<input class="" type="text" placeholder="Name" ng-model="thing.name"></input>
+	<button class="btn" ng-click="createProperty()">Add Property</button>
+</div>
+<ul>
+	<li ng-repeat="property in thing.properties">
+		<div class="directive-property">
+    		<span>Name: <input ng-model="property.name" type="text"/> Value: <input ng-model="property.value" type="text"/> <button class="close" ng-click="removeProperty($index)">&times;</button></span>
+    </div>
+	</li>
+</ul>

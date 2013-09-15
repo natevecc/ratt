@@ -1,0 +1,6 @@
+<button class="btn" ng-click="createThing()">Create Thing</button>
+<ul>
+	<li ng-repeat="thing in things">
+		<span>Name: {{thing.name}} <a class="btn" ng-href="#/thing/{{thing.id}}">Edit</button></span>
+	</li>
+</ul>
